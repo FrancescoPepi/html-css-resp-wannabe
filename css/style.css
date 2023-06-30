@@ -133,11 +133,41 @@ img {
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
+    padding: 0 0;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .row {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
   .container {
+    padding: 3rem 4rem;
+  }
+
+  .lessons .col {
     width: 100%;
+  }
+
+  .steps .col {
+    width: 100%;
+  }
+
+  .why-us .col {
+    width: 100%;
+  }
+
+  .steps {
+    padding: 0;
+    margin: 0;
+  }
+
+  .why-us {
+    margin-bottom: 0;
+    background-color: #222222;
   }
 }
